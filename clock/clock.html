@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Clock App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="clock.css">
+  <script src="clock.js" ></script>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('clock')">Clock</div>
+    <div class="tab" onclick="showTab('stopwatch')">Stopwatch</div>
+    <div class="tab" onclick="showTab('alarm')">Alarm</div>
+  </div>
+
+  <div class="container" id="clock-tab">
+    <div class="time" id="clock-time">--:--:--</div>
+    <div class="ampm" id="clock-ampm">AM</div>
+    <div class="date">
+      <div id="clock-day">Monday</div>
+      <div id="clock-date">January 1, 2025</div>
+    </div>
+  </div>
+
+  <div class="container hidden" id="stopwatch-tab">
+    <div class="time" id="stopwatch-display">00:00:00</div>
+    <div>
+      <button onclick="startStopwatch()">Start</button>
+      <button onclick="stopStopwatch()">Stop</button>
+      <button onclick="resetStopwatch()">Reset</button>
+    </div>
+  </div>
+
+  <div class="container hidden" id="alarm-tab">
+    <div class="time">Set Alarm:</div>
+    <input type="time" id="alarmTime" />
+    <div class="alarm-set">
+      <button onclick="setAlarm()">Set Alarm</button>
+      <button onclick="clearAlarm()">Clear Alarm</button>
+    </div>
+    <div class="alarm-msg" id="alarmMsg"></div>
+  </div>
+</body>
+</html>
+
+
