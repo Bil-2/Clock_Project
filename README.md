@@ -11,10 +11,6 @@ Displays the current time and date in real-time with a stylish, responsive UI.
 - ⚡ Lightweight and **fully responsive**
 - 🧠 Great for learning **JavaScript time/date functions** and **dynamic UIs**
 
-## 📸 Preview
-
-![Digital Clock Preview](screenshot.png)
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repository:
